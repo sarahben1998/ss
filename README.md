@@ -12,9 +12,8 @@ const numbersArray = [1, 2, 3, 4, 5, 6];
 const average = averageOfEvenNumbers(numbersArray);
 console.log(average); // Output: 3.5
 Longest Word using reduce():
-javascript
-Copy code
-function longestWord(words) {
+
+2)function longestWord(words) {
   return words.reduce((longest, current) => (current.length > longest.length ? current : longest), '');
 }
 
@@ -25,7 +24,7 @@ console.log(longest); // Output: "strawberry"
 
 
 
-2)Average Number of Pages using map() and reduce():
+3)Average Number of Pages using map() and reduce():
 
 function averagePages(books) {
   const totalPages = books.map(book => book.pages).reduce((acc, pages) => acc + pages, 0);
@@ -40,9 +39,9 @@ const booksArray = [
 ];
 const averagePagesResult = averagePages(booksArray);
 console.log(averagePagesResult); // Output: 123.33333333333333
-Frequency of Strings using reduce():
-javascript
-Copy code
+
+4)Frequency of Strings using reduce():
+
 function stringFrequency(strings) {
   return strings.reduce((freqObj, str) => {
     freqObj[str] = (freqObj[str] || 0) + 1;
@@ -56,7 +55,7 @@ const frequencyObj = stringFrequency(stringsArray);
 console.log(frequencyObj); // Output: { hello: 2, world: 1 }
 
 
-3)Count of People by City using reduce():
+5)Count of People by City using reduce():
 
 function countPeopleByCity(people) {
   return people.reduce((cityCount, person) => {
